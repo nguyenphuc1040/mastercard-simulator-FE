@@ -1,0 +1,154 @@
+.card-container{
+
+    background-color: #444444;
+    height: 270px;
+    width: 500px;
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: auto 30px;
+    background-size: cover;
+    overflow: hidden;
+  
+  }
+  .card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    background-size: cover;
+    padding: 20px 20px 25px 20px;
+    width: 100%;
+  }
+  .card-type{
+    width: 100%;
+    background-color:rgba(255, 0, 0, 0.473);
+    display: flex;
+    align-items: center;
+  }
+  .card-type-text{
+    color: rgba(255, 255, 255, 0.856);
+    font-weight: 1000;
+    font-size: 20px;
+    writing-mode: tb-rl;
+  }
+  .card-balance{
+    width:100%;
+    height:165px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .card-button-refresh{
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    height: 40px;
+    width: 100px;
+    background-color: rgb(212, 37, 37);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+  }
+  .card-button-refresh:hover{
+    background-color: rgb(180, 34, 34);
+  }
+  .card-money{
+    color: white;
+    font-size: 23px;
+    font-weight: 600;
+  }
+  .card-infomation{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto 100px;
+  }
+  .card-cvv-exp{
+    display: flex;
+    flex-direction: column;
+  
+  }
+  .card-cvv, .card-exp{
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 5px;
+  }
+  .card-exp{
+    margin-top: 11px;
+  }
+  .card-name{
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .card-number{
+    color: white;
+    font-size: 27px;
+    font-weight: 600;
+  }
+  .transfers-container input{
+    margin-top: 5px;
+    background-color: #111111;
+    color: white;
+    border-color: rgba(255, 255, 255, 0.199);
+    height: 40px;
+  }
+  .transfers-container input:hover{
+    background-color: #242424;
+    border-color: rgba(255, 255, 255, 0.199);
+  }
+  .transfers-container input:focus{
+    background-color: #242424;
+    border-color: rgba(255, 255, 255, 0.199);
+  }
+  .button-sendmoney{
+    margin-top: 30px;
+    background-color: #dd1b1b;
+    height: 40px;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    font-size: 19px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .button-sendmoney:hover{
+    background-color: #c41c1c;
+  }
+  .ant-input-number{
+    width: 100%;
+  }
+
+  .trans-receive-label{
+    color: rgb(0, 155, 95);
+  }
+  .trans-send-label{
+    color:#bd0000;
+  }
+  .flex {
+    display: flex;
+    justify-content: space-between;
+  }
+  .trans-balance-text{
+    color:rgb(146, 146, 146);
+    font-size: 12px;
+    font-weight: 500;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .trans-container{
+    border-radius: 10px;
+    background-color:#1a1a1a;
+    padding: 1px 15px 10px 15px;
+    margin-top: 10px;
+  }
+  .message-trans{
+     width: 300px;
+     white-space: nowrap;
+     overflow: hidden;
+     text-overflow: ellipsis;
+  }
