@@ -1,32 +1,24 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link,
-} from "react-router-dom";
-import MasterCard from './components/MasterCard/MasterCard';
-import MasterCardManager from './components/MasterCardManager/MasterCardManager';
+import React from "react";
+import logo from "./logo.svg";
+import "./App.css";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import MasterCard from "./components/MasterCard/MasterCard";
+import MasterCardManager from "./components/MasterCardManager/MasterCardManager";
 
 function App() {
   return (
-    
-      <Router basename="/">
+    <Router basename="/">
+      <div className="App">
         <Switch>
-          <div className="App">
-      
-            <Route exact  path="/:idMasterCard">
-              <MasterCard></MasterCard>
-            </Route>
-            <Route exact  path="/">
-              <MasterCardManager></MasterCardManager>
-            </Route>
-          </div>
+          <Route exact path="/:idMasterCard">
+            <MasterCard></MasterCard>
+          </Route>
+          <Route exact path="/">
+            <MasterCardManager></MasterCardManager>
+          </Route>
         </Switch>
-      </Router>
-  
+      </div>
+    </Router>
   );
 }
 
