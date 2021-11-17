@@ -11,10 +11,10 @@ function App() {
       <div className="App">
         <Switch>
           <Route exact path="/:idMasterCard">
-            <MasterCard></MasterCard>
+            <MasterCard/>
           </Route>
           <Route exact path="/">
-            <MasterCardManager></MasterCardManager>
+            <MasterCardManager/>
           </Route>
         </Switch>
       </div>
