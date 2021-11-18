@@ -22,6 +22,7 @@ interface Transaction{
     BalanceSender: any;
     AmountOfMoney: number;
     Fee: any;
+    TransDate: Date;
 }
 
 interface Trans{

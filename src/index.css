@@ -7,6 +7,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #111111;
+  overflow-x: hidden;
 }
 
 code {
@@ -20,7 +21,7 @@ code {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: var(--mainGray-color); 
+  background:rgb(0, 0, 0) ; 
 }
  
 /* Handle */

@@ -3,7 +3,7 @@
 .App{
   width:100vw;
   min-height: 100vh;
-  padding: 50px 400px 0 400px;
+  padding: 50px 400px 200px 400px;
   background-color: #111111;
   height: fit-content;
   display: flex;
@@ -12,17 +12,17 @@
 }
 @media screen and (max-width: 1600px) {
   .App{
-    padding: 50px 200px 0 200px;
+    padding: 50px 200px 200px 200px;
   }
 }
 @media screen and (max-width: 1100px) {
   .App{
-    padding: 50px 100px 0 100px;
+    padding: 50px 100px 200px 100px;
   }
 }
 @media screen and (max-width: 768px) {
   .App{
-    padding: 20px 10px 0 10px;
+    padding: 20px 20px 200px 20px;
   }
 }
 
