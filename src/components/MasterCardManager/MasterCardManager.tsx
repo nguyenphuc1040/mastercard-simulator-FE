@@ -50,7 +50,7 @@ function MasterCardManager() {
         setIsModalVisible(false);
     };
     const createCard = (typeCard:any,name:any) => {
-        axios.post('https://localhost:5001/api/mastercard/create', {
+        axios.post('https://ms-stun.herokuapp.com/api/mastercard/create', {
             MasterCardName: name,
             MasterCardType: typeCard
         })
@@ -63,7 +63,7 @@ function MasterCardManager() {
         });
     }
     const fetchDataCard = () => {
-        return axios.get("https://localhost:5001/api/mastercard")
+        return axios.get("https://ms-stun.herokuapp.com/api/mastercard")
            .then((response) => {setListCard(response.data)});
         }
     useEffect(() => {

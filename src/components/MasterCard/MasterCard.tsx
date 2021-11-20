@@ -32,14 +32,14 @@ function MasterCard() {
 
   const fetchDataTrans = (res: any) => {
     return axios
-      .get("https://localhost:5001/api/transaction/" + res?.MasterCardNumber)
+      .get("https://ms-stun.herokuapp.com/api/transaction/" + res?.MasterCardNumber)
       .then((response) => {
         setListTrans(response.data.reverse());
       });
   };
   const fetchDataCard = () => {
     return axios
-      .get("https://localhost:5001/api/mastercard/" + idMasterCard)
+      .get("https://ms-stun.herokuapp.com/api/mastercard/" + idMasterCard)
       .then((response) => {
         setCardData(response.data);
         fetchDataTrans(response.data);
@@ -48,7 +48,7 @@ function MasterCard() {
 
   const postCreateTrans = () => {
     axios
-      .post("https://localhost:5001/api/transaction/create", {
+      .post("https://ms-stun.herokuapp.com/api/transaction/create", {
         Trans: {
           MasterCardNumberSend: cardData?.MasterCardNumber,
           MasterCardNumberReceive: cardReceive,
