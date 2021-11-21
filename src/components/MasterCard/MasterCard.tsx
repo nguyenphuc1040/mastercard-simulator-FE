@@ -139,7 +139,7 @@ function MasterCard() {
                       {data.TransactionMessage}
                     </div>
                     <div className="trans-balance-text">
-                      <Moment format="yyyy-mm-DD | hh:mm:ss" trim>
+                      <Moment format="DD-MM-yyyy | hh:mm:ss" trim>
                         {data.TransDate}
                       </Moment>
                     </div>
